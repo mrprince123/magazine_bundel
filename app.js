@@ -8,18 +8,6 @@ const session = require('express-session');
 const app = express();
 
 
-// Serve the React app's build directory as static files
-app.use(express.static(path.join(__dirname, './client/build')));
-
-// Set up a route to serve the index.html file for any unknown paths
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, './client/build/index.html'), (err) => {
-    if (err) {
-      res.status(500).send(err);
-    }
-  });
-});
-
 
 
 
@@ -53,6 +41,19 @@ app.use(require('./router/contact'));
 // if(process.env.NODE_ENV == "production"){
 //   app.use(express.static("client/build"));
 // }
+
+
+// Serve the React app's build directory as static files
+app.use(express.static(path.join(__dirname, './client/build')));
+
+// Set up a route to serve the index.html file for any unknown paths
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, './client/build/index.html'), (err) => {
+    if (err) {
+      res.status(500).send(err);
+    }
+  });
+});
 
 const port = process.env.PORT || 5000;
 

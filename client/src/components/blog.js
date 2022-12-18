@@ -5,9 +5,11 @@ import { useNavigate } from 'react-router-dom';
 function Blog() {
     const navigate = useNavigate();
     const [blogData, setBlogData] = useState([]);
+
     const [searchTerm, setSearchTerm] = useState('');
 
     const getBlog = async () => {
+
         try {
             const res = await fetch('/blog', {
                 method: "GET",
@@ -20,8 +22,10 @@ function Blog() {
 
             const data = await res.json();
             setBlogData(data);
+            console.log(data);
 
-            if (res.status !== 200) {
+            //done some change here.
+            if (!res.status === 200) {
                 const error = new Error(res.error);
                 throw error;
             }
@@ -33,7 +37,7 @@ function Blog() {
 
     useEffect(() => {
         getBlog();
-         //eslint-disable-next-line
+        //eslint-disable-next-line
     }, []);
 
     return (
