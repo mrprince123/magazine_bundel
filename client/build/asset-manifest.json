@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.766202d4.css",
-    "main.js": "/static/js/main.d73a799c.js",
+    "main.js": "/static/js/main.add00e03.js",
     "static/media/team_pic.jpg": "/static/media/team_pic.7340c445ad92c729dd3f.jpg",
     "static/media/hand_pic.jpg": "/static/media/hand_pic.07374960f65c7e5af4e5.jpg",
     "static/media/magazine_again.jpg": "/static/media/magazine_again.7365f25056669488335d.jpg",
     "index.html": "/index.html",
     "main.766202d4.css.map": "/static/css/main.766202d4.css.map",
-    "main.d73a799c.js.map": "/static/js/main.d73a799c.js.map"
+    "main.add00e03.js.map": "/static/js/main.add00e03.js.map"
   },
   "entrypoints": [
     "static/css/main.766202d4.css",
-    "static/js/main.d73a799c.js"
+    "static/js/main.add00e03.js"
   ]
 }

@@ -39,13 +39,13 @@ function Header() {
                         <NavLink className="nav-link" aria-current="page" to="/">Home</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="/blog">Blog</NavLink>
+                        <NavLink className="nav-link" to="/blog">Magazine</NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink className="nav-link" to="/about" >About us</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="/contact" >Contact us</NavLink>
+                        <NavLink className="nav-link" to="/contact">Contact us</NavLink>
                     </li>
                     <li className='nav-item'>
                         <NavLink to='/login' className='nav-link'><button className=''>Login</button></NavLink>
