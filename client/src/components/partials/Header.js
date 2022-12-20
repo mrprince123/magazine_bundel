@@ -22,14 +22,12 @@ function Header() {
                     <li className="nav-item">
                         <NavLink className="nav-link" to="/about" >About us</NavLink>
                     </li>
-                    <div className='button_div_nav'>
-                        <li className='nav-item'>
-                            <NavLink to='/login' className='nav-link loginbtn'><button className=''>Login</button></NavLink>
-                        </li>
-                        <li className='nav-item'>
-                            <NavLink to='/register' className='nav-link logoutbtn'><button className=''>Register</button></NavLink>
-                        </li>
-                    </div>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" to="/contact">Contact us</NavLink>
+                    </li>
+                    <li className='nav-item'>
+                        <NavLink to='/logout' className='nav-link'><button className=''>Logout</button></NavLink>
+                    </li>
                 </>
             )
         } else {
@@ -47,12 +45,14 @@ function Header() {
                     <li className="nav-item">
                         <NavLink className="nav-link" to="/contact">Contact us</NavLink>
                     </li>
-                    <li className='nav-item'>
-                        <NavLink to='/login' className='nav-link'><button className=''>Login</button></NavLink>
-                    </li>
-                    <li className='nav-item'>
-                        <NavLink to='/register' className='nav-link'><button className=''>Register</button></NavLink>
-                    </li>
+                    <div className='button_div_nav'>
+                        <li className='nav-item'>
+                            <NavLink to='/login' className='nav-link loginbtn'><button className=''>Login</button></NavLink>
+                        </li>
+                        <li className='nav-item'>
+                            <NavLink to='/register' className='nav-link logoutbtn'><button className=''>Register</button></NavLink>
+                        </li>
+                    </div>
                 </>
 
             )
