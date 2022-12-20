@@ -14,10 +14,10 @@ function Header() {
                         <NavLink className="nav-link" aria-current="page" to="/">Home</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="/blog">Blog</NavLink>
+                        <NavLink className="nav-link" to="/blog">Magazine</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="/blogpost">Post Blog</NavLink>
+                        <NavLink className="nav-link" to="/blogpost">Post Content</NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink className="nav-link" to="/about" >About us</NavLink>
