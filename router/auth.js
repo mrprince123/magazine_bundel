@@ -12,9 +12,9 @@ router.get("/logout", function (req, res) {
 });
 
 
-router.get('/login', function (req, res) {
-    res.send('Router is working fine in the Loginpage.');
-});
+// router.get('/login', function (req, res) {
+//     res.send('Router is working fine in the Loginpage.');
+// });
 
 
 router.post('/login', async function (req, res) {
@@ -61,9 +61,9 @@ router.post('/login', async function (req, res) {
 
 
 
-router.get('/register', function (req, res) {
-    res.send('Router is working fine in the registerpage.');
-})
+// router.get('/register', function (req, res) {
+//     res.send('Router is working fine in the registerpage.');
+// })
 
 
 router.post('/register', async function (req, res) {

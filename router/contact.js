@@ -3,9 +3,9 @@ const ContactModel = require('../models/contactSchema');
 const router = express.Router();
 
 
-router.get('/contact', function(req, res){
-    res.send('Router is working fine in the contactpage.');
-})
+// router.get('/contact', function(req, res){
+//     res.send('Router is working fine in the contactpage.');
+// })
 
 router.post('/contact', async function(req, res){
     try {

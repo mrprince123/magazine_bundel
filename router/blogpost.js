@@ -3,9 +3,9 @@ const authenticate = require('../middleWare/authenticate');
 const BlogModel = require('../models/blogSchema');
 const router = express.Router();
 
-router.get('/blogpost', function(req, res){
-    res.send("This is the blogPost Page")
-});
+// router.get('/blogpost', function(req, res){
+//     res.send("This is the blogPost Page")
+// });
 
 
 router.post('/blogpost', async function (req, res) {
