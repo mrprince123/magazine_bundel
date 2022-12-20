@@ -7,10 +7,6 @@ const session = require('express-session');
 
 const app = express();
 
-
-
-
-
 // Parse request body as JSON
 app.use(express.json());
 
@@ -37,10 +33,6 @@ app.use(require('./router/about'));
 app.use(require('./router/home'));
 app.use(require('./router/contact'));
 
-
-// if(process.env.NODE_ENV == "production"){
-//   app.use(express.static("client/build"));
-// }
 
 
 // Serve the React app's build directory as static files
