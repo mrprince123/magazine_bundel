@@ -4,6 +4,7 @@ import { UserContext } from '../../App';
 
 function Header() {
 
+    // This is the useState hook
     const { state } = useContext(UserContext);
 
     const RenderMenu = () => {
