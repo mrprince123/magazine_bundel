@@ -25,7 +25,8 @@ app.use(
 // Connect to database
 require('./DB/conn');
 
-// Just Restarting the Server again.
+// Just Restarting  the Server again.
+// Just Restarting the server again
 
 // Define routes
 app.use(require('./router/auth'));
@@ -34,6 +35,7 @@ app.use(require('./router/blogpost'));
 app.use(require('./router/about'));
 app.use(require('./router/home'));
 app.use(require('./router/contact'));
+
 
 
 
